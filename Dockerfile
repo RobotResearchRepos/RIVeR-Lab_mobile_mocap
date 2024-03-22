@@ -23,7 +23,7 @@ RUN python3 -m pip install opencv-python scikit-spatial
 RUN mkdir -p /ros2_ws/src/
 
 RUN git clone --recurse-submodules \
-      https://https://github.com/RobotResearchRepos/RIVeR-Lab_mobile_mocap \
+      https://github.com/RobotResearchRepos/RIVeR-Lab_mobile_mocap \
       /ros2_ws/src/mobile_mocap
 
 RUN . /opt/ros/$ROS_DISTRO/setup.bash \
