@@ -13,10 +13,10 @@ RUN apt-get update \
 # pip packages
 
 RUN apt-get update \
- && apt-get install -y python-pip \
+ && apt-get install -y python3-pip \
  && rm -rf /var/lib/apt/lists/*
 
-RUN pip install opencv-python scikit-spatial
+RUN python3 -m pip install opencv-python scikit-spatial
 
 # Code repository
 
